@@ -6,10 +6,10 @@
 
 [Spring 2019]()
 
-    * [Discrete Structures](spring_2019/discrete.md)
-    * [Colloquium II](spring_2019/honors.md)
+    * [Discrete_Structures](spring_2019/discrete.md)
+    * [Colloquium_II](spring_2019/honors.md)
     * [Statistics](spring_2019/stats.md)
-    * [Software Design](spring_2019/software_design.md)
+    * [Software_Design](spring_2019/software_design.md)
 
 <!-- [Fall2018]()
 
