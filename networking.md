@@ -28,10 +28,13 @@ Every node broadcasts its information to all other nodes
 Uses Dijkstra's Algorithm for traversal
 Also called Least-Cost algorithm
 Can have oscillations because link costs are not asymmetric
-    - asymmetric costs = different costs for both paths on a route
+
+- asymmetric costs = different costs for both paths on a route
+
 _O(V^2)_ -> less if the network is sparse
 Expensive in terms of computation
-    - since it is generally only run on sparse systems, the expense is mostly avoided
+
+- since it is generally only run on sparse systems, the expense is mostly avoided
 
 ###Distance Vector
 Only contacts immediate neighbors
@@ -53,13 +56,17 @@ An intra-AS routing protocol
 Uses UDP and a DV algorithm
 Can have up to 25 routes -> not a very large network
 Unable to do authentication (v1)
-    - v2 fixed those issues
+
+- v2 fixed those issues
+
 Not set up for IPv6
 Low tier ISP and enterprise networks
 
 ###OSPF
 Open Shortest Path First
-    - open source
+
+- open source
+
 Uses LS
 Admin sets link weights
 Secure and can be authenticated
