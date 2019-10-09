@@ -1,6 +1,6 @@
 # Webnotes
 
-[Networking](networking.md)
+[Networking Class](networking.md)
 [Algorithms](algorithms.md)
 [Functional](functional.md)
 
