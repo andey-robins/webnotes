@@ -1,20 +1,26 @@
-# YourPageTitle
+# Webnotes
 
-[Page1](page1.md)
-[Page2](page2.md)
-[Page3](page3.md)
+[Networking](networking.md)
+[Algorithms](algorithms.md)
+[Functional](functional.md)
 
-[SubMenuName]()
+[Spring 2019]()
 
-  * [SubPage1](subpage/page1.md)
-  * [SubPage2](subpage/page2.md)
-  * [SubPage3](subpage/page3.md)
+    * [Discrete Structures](Spring2019/discrete.md)
+    * [Colloquium II](Spring2019/honors.md)
+    * [Statistics](Spring2019/stats.md)
+    * [Software Design](Spring2019/software_design.md)
+
+[Fall 2018]()
+
+    * [Data Structures](Fall2018/data_structures.md)
+    * [FYS](Fall2018/fys.md)
+    * [Colloquium I](Fall2018/honors.md)
+    * [Linear Algebra](Fall2018/linear_algebra.md)
+    * [Computer Organizations](Fall2018/organizations.md)
 
 <!-- set a default theme -->
 [gimmick:theme (inverse: false)](bootstrap)
 
 <!-- show a theme chooser in the menu bar -->
 [gimmick:ThemeChooser](Change theme)
-
-<!-- show a fork me on github ribbon -->
-[gimmick:forkmeongithub](http://github.com/Dynalon/mdwiki-seed/)

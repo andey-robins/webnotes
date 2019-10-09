@@ -43,6 +43,7 @@ Requires no synchronization
 Not as fast since it's distributed
 _O(VE)_
 Uses Bellman-Ford algorithm
+
     - "fixed" Dijkstra's
     - Detects negative weight cycles
 
