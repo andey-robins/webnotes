@@ -4,14 +4,14 @@
 [Algorithms](algorithms.md)
 [Functional](functional.md)
 
-[Spring 2019]()
+[Spring2019]()
 
     * [Discrete Structures](Spring2019/discrete.md)
     * [Colloquium II](Spring2019/honors.md)
     * [Statistics](Spring2019/stats.md)
     * [Software Design](Spring2019/software_design.md)
 
-[Fall 2018]()
+[Fall2018]()
 
     * [Data Structures](Fall2018/data_structures.md)
     * [FYS](Fall2018/fys.md)

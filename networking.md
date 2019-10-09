@@ -44,8 +44,8 @@ Not as fast since it's distributed
 _O(VE)_
 Uses Bellman-Ford algorithm
 
-    - "fixed" Dijkstra's
-    - Detects negative weight cycles
+- "fixed" Dijkstra's
+- Detects negative weight cycles
 
 ###Autonomous systems
 An AS is a network under one administrative control
