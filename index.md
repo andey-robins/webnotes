@@ -6,3 +6,5 @@ I am currently in the process of digitizing everything with the end goal of bein
 web portal at the end of the project.
 
 This is based upon the project by user [Dynalon](http://github.com/Dynalon/mdwiki-seed/) on Github.
+
+To get to the main project, click [here](http://andey-robins.github.io/webnotes/mdwiki#!index.md).

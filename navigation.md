@@ -3,21 +3,18 @@
 [Networking Class](networking.md)
 [Algorithms](algorithms.md)
 [Functional](functional.md)
+[Discrete_Structures](discrete.md)
+[Colloquium_II](honors2.md)
+[Statistics](stats.md)
+[Software_Design](software_design.md)
+[Data Structures](data_structures.md)
+[FYS](fys.md)
+[Colloquium I](honors.md)
+[Linear Algebra](linear_algebra.md)
 
-[Spring 2019]()
+[Fall 2019]()
 
-    * [Discrete_Structures](spring_2019/discrete.md)
-    * [Colloquium_II](spring_2019/honors.md)
-    * [Statistics](spring_2019/stats.md)
-    * [Software_Design](spring_2019/software_design.md)
-
-<!-- [Fall2018]()
-
-    * [Data Structures](Fall2018/data_structures.md)
-    * [FYS](Fall2018/fys.md)
-    * [Colloquium I](Fall2018/honors.md)
-    * [Linear Algebra](Fall2018/linear_algebra.md)
-    * [Computer Organizations](Fall2018/organizations.md) -->
+ * [Computer Organizations](./fall_2019/organizations.md)
 
 <!-- set a default theme -->
 [gimmick:theme (inverse: false)](bootstrap)
@@ -25,5 +22,8 @@
 <!-- show a theme chooser in the menu bar -->
 [gimmick:ThemeChooser](Change theme)
 
-<!-- show a fork me on github ribbon -->
-[gimmick:forkmeongithub](http://github.com/Dynalon/mdwiki-seed/)
+<!-- show a fork me on github ribbon 
+[gimmick:forkmeongithub](http://github.com/Dynalon/mdwiki-seed/) -->
+
+<!-- setup math/latex syntax -->
+[gimmick: math]()
