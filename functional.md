@@ -1,3 +1,54 @@
-# Functional Programming
+Functional Programming
+=====
 
-Coming Soon!
+Class notes from Computer Science 3015, Functional Programming at the University of Wyoming. I took this class, and these notes, during the fall Semester of 2019.
+
+Code and assignments associated with this class are available [here](https://github.com/andey-robins/school/tree/master/cosc3015/homework).
+
+An excellent book to check out is Learn You a Haskell for Great Good: A Beginners Guide.
+
+I'm going to be totally real here too, I don't actually know what this class is about and we're basically half way through the semester
+
+Homework Review
+-----
+definitions for the exam will be provided in a manner similar to the homework
+proofs that two functions are equal should also include a proof that their types are the same
+
+to prove two functions are equal, show that forall arguments, they are the same
+
+no need to include "justifications" for the actions you take on the table
+the empty list is an element of all types -> you can use it as a catch all for a result of type list
+`f :: [a] -> (a -> b) -> [b]` -> `f _ _ = []`
+`f :: Maybe a = Just a | Nothing` -> `f _ _ = Nothing` -> `f [] g = Nothing && f (x:xs) g = Just (g x)`
+
+a tail recursive function is one where an accumulator goes down the call stack with it and then is returned with the result as soon as it hits the bottom
+`data Tree a = Leaf | Node a (Tree a) (Tree a)`
+`Leaf:: Tree a`
+`Node:: a -> (Tree a) -> (Tree a) -> Tree a`
+
+Warning: Caldwell roasts Gamboa and everyone laughs. World peace is achieved. Obama is there. It is wonderful.
+
+on the length proof from hw6, add one more step to show that `|x:xs| + |ys|` = `1 + |xs| + |ys|`
+
+`foldl` and `foldr` behave the same when the operator is associative
+
+Exam 1 Contents and Review
+-----
+ * curry and uncurry
+ * question similar to Theorem 1.3's proof on HW 2
+ * left or right identity
+ * type inferencing
+ * write a function from a type definition
+ * tail recursive version of length
+ * type of cons and append <- this will explicitly be on the test
+ * write constructors and give their types for a data structure
+ * write a tail recursive function on the above data structure
+ * list induction and proofs
+ * foldl and foldr
+
+Hint: `f :: a -> b -> ((a,b) -> c) -> c` = `f x y g = g (x,y)`
+
+- 5 questions
+- 75 minutes
+- regular meeting place
+- minor syntax errors will only result in minor deductions
