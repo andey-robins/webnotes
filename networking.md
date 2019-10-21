@@ -120,3 +120,101 @@ Assuming you can detect a collision, treat re-transmission similar to when you'r
     - network address (usually IP) to 48 bit ethernet address (MAC address)
 - only need to know your own MAC
     - send to broadcast channel (0*)
+
+###My Day Off
+Go through friday's slides since they had ethernet and switches
+
+###VLAN
+- a way to divide things up on a large switch
+    - a 64 port switch might serve 3 "subnets" that you want to be unique
+    - VLANs let you set up "smaller switches" within your big switch
+- let you have programable networks
+    - switch lets you isolate specific ports and set them up as a LAN across several switches
+- VLAN frame modifications are added to move between VLANs
+    - stripped off before the hosts see it
+    - totally backwards compatible
+
+###MPLS and Data Centers
+- take notes from the book
+- "Don't care" - Dr Buckner
+- bitter about the data centers around laramie not being a thing and being petty with the university
+
+Networking
+=====
+Note: we stop the exam material at chapter 6. This will not be on the second exam.
+
+###Wireless Hosts
+laptop
+PDA
+phone
+many IOT devices
+bluetooth
+perhaps not even mobile hosts
+
+###Wireless Links
+Note: all wireless connections are considered to be on the edge of the network
+- host and base station
+    - base station usually a wired object
+    - hosts always remain in contact with the base station
+        - cell towers
+        - wireless access points
+    - hosts that are connected to a base are in infrastructure mode
+        - part of the infrastructure of the network
+    - connecting with each other but not the internet are *ad hoc*
+        - must providing their own routing, address assignment, and DNS style service
+    - a *handoff* is a mobile host moving from one association to another
+- host and host
+
+Exam 2 Review
+-----
+- Sections 4, 5, 6
+- All lecture notes and homework answers online by Wednesday
+- New format
+    - multiple guess
+    - fill in the blank
+    - short answer (1-2 sentences)
+- try not to assume things
+- try not to overthink
+
+###Chapter 4
+- datagram networks
+- IPv4
+    - addressing
+    - fragmentation
+    - protocol
+    - what's in the header and uses
+- IPv6
+    - addressing
+    - fragmentation
+    - header
+- DHCP
+- NAT
+- ICMP
+- routing algorithms
+    - not in huge detail
+    - both of them
+        - what are they used for
+        - when to use each
+        - how do they update their data
+
+###Chapter 6
+- frames
+    - CRC
+- minimum frame size
+- MAC addressing
+    - how are they assigned
+    - how are they used
+- ARP
+    - what is it used for
+    - how does it work
+- Ethernet topology
+    - switches
+    - hubs
+    - busses
+    - host arrangement
+- CSMA/CD
+    - what does it stand for
+    - how does it work
+- VLAN
+    - why do it
+    - how's it implemented
