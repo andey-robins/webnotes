@@ -9,6 +9,17 @@ An excellent book to check out is Learn You a Haskell for Great Good: A Beginner
 
 I'm going to be totally real here too, I don't actually know what this class is about and we're basically half way through the semester
 
+Curry and Uncurry
+-----
+||curry|uncurry|
+|---|---|---|
+|definition::|((a,b) -> c) -> (a -> (b -> c))|(a -> (b -> c)) -> ((a,b) -> c)|
+|function call|f (x, y)|f x y|
+
+Proofs
+-----
+Handwritten proofs are contained in the Onenote notebooks used for this class. They are simply demonstrations of inductive proofs written out by me, and so they may not be much help. I haven't included them at this time because they seem to not be anything other than properties about the functions in haskell.
+
 Homework Review
 -----
 definitions for the exam will be provided in a manner similar to the homework
