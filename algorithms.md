@@ -4,6 +4,74 @@ Class notes from Computer Science 3020, Algorithms and Data Structures at the Un
 
 Code and assignments associated with this class is available [here](https://github.com/andey-robins/school/tree/master/cosc3020/).
 
+Time Complexity Information
+-----
+the master's theorems are a way to simply calculate the time complexity of code without tracing a recurrence relation
+
+|Operation|Time Complexity|
+|---|---|
+|single operation|constant|
+|consecutive operations|sum operation time|
+|conditionals|condition time + max branch time|
+|loops|sum of loop-body times|
+|function call|time for function|
+
+###Asymptotic Behavior
+- find runtime as a function of *n*
+- can ignore constants in final complexity
+- is really meaningful when *n* is large
+
+Sorting
+-----
+y'know what sorting is. It's basically just trying to put things in order.
+
+###Loop Invariants
+a loop invariant is something that can be said about the loop at any given iteration
+for instance, the loop invariant for insertion sort is: after each iteration of the loop, elements [0..i-1] are sorted
+using a loop invariant, you can eventually show that an algorithm is correct
+
+####Finding Invariants
+First ask, "What would be true about this data after every loop?"
+Functions similarly to a proof by induction where the loop invariant is the induction hypothesis
+
+###Insertion Sort
+Worst Case : *θ(n^2)*
+Best Case : *θ(n)*
+
+###Heap Sort
+1. heapify input
+2. remove minimum value
+3. repeat *n* times
+
+Worst Case : *θ(n log n)*
+Best Case : *θ(n log n)*
+
+###Merge Sort
+divide and conquer algorithm
+
+1. if an array has 0 or 1 elements, it's sorted
+2. split the array into two halves
+3. sort each half recursively
+4. merge the two halves into a single, sorted partition
+
+Searching
+-----
+searching deals with the ways we move through graphs
+
+###Search Types
+- depth first search (DFS)
+    - go as far down a path as possible
+    - slowly backtrack to search through every possible solution
+    - usually done with recursion
+- breadth first search (BFS)
+    - expand from the center outwards in "steps"
+    - search wide instead of deep
+    - makes use of a queue
+- best first search
+    - breadth first search with a priority queue
+    - priority is assigned with some sort of heuristic function
+    - dijkstra's algorithm and A* are some examples of best first search algorithms
+
 Assignment 1 Review
 -----
 

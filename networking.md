@@ -153,6 +153,7 @@ perhaps not even mobile hosts
 
 ###Wireless Links
 Note: all wireless connections are considered to be on the edge of the network
+
 - host and base station
     - base station usually a wired object
     - hosts always remain in contact with the base station
@@ -189,6 +190,8 @@ Exam 2 Review
     - header
 - DHCP
 - NAT
+
+###Chapter 5
 - ICMP
 - routing algorithms
     - not in huge detail
