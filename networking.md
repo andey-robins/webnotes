@@ -74,12 +74,12 @@ secure and can be authenticated
 upper tier ISPs
 
 Link Layer
-=====
+-----
 
 Physical connectors are the bomb right now; let's talk about that.
 
-Collision Issues
------
+##Collision Issues
+
 Assuming you can detect a collision, treat re-transmission similar to when you're talking with someone. If you both start talking at once, someone will restart after you both start. In computers, that time is random.
 
 ###ALOHA
@@ -140,7 +140,7 @@ Go through friday's slides since they had ethernet and switches
 - bitter about the data centers around laramie not being a thing and being petty with the university
 
 Networking
-=====
+-----
 Note: we stop the exam material at chapter 6. This will not be on the second exam.
 
 ###Wireless Hosts
@@ -165,9 +165,41 @@ Note: all wireless connections are considered to be on the edge of the network
         - must providing their own routing, address assignment, and DNS style service
     - a *handoff* is a mobile host moving from one association to another
 - host and host
+- operate under the assumption that everything above them remains the same
+    - some services may change in ad hoc networks (i.e. DNS)
+
+###Interference
+- with physical connections (i.e. wires) the transmission medium has mild attenuation
+- noise can be caused by electric issues around or damage to the transmission medium
+- wireless interference is way more finicky
+    - electricity rolling around everywhere causes noise in the environment that interferes with wireless communication
+    - basic home appliances can cause interference with electricity
+    - any form of electric surge can cause problems
+    - building construction materials can scatter signal and turn it into noise
+- pretty much impossible to determine why the signal is degraded
+    - but can tell that it is
+- measure a Signal-to-Noise ration (SNR)
+    - value in dB
+    - this is the ratio of the power of signal to the power of noise
+    - *X * log_10 (received power/noise power)*
+- also talk about BER (Bit Error Rate)
+    - probability a bit will be received in error
+    - inversely proportional to SNR
+- can increase the SNR by increasing transmission power
+    - problems with lots more power (duh)
+
+###801.11
+- single hop, infrastructure based
+- nodes and a base station
+- everybody has a MAC address
+- access points have MAC addresses
+    - they broadcast their SSID and MAC when someone comes into the network
+
 
 Exam 2 Review
 -----
+Note: nothing from wireless is going to be on Exam 2
+
 - Sections 4, 5, 6
 - All lecture notes and homework answers online by Wednesday
 - New format
