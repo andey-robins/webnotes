@@ -56,7 +56,7 @@ divide and conquer algorithm
 
 Searching
 -----
-searching deals with the ways we move through graphs
+searching deals with the ways we move through graphs and try to find specific elements
 
 ###Search Types
 - depth first search (DFS)
@@ -71,6 +71,29 @@ searching deals with the ways we move through graphs
     - breadth first search with a priority queue
     - priority is assigned with some sort of heuristic function
     - dijkstra's algorithm and A* are some examples of best first search algorithms
+
+Network Flow
+-----
+graphs with edge capacities
+designated source and target vertices
+flow into a vertex must equal flow out of a vertex
+e.g. roads, water networks, LAN cables
+the question is at any given point, how much data can we push from source to target
+
+###Ford-Fulkerson Algorithm
+an algorithm to determine the network flow of the network:
+
+- set flow to 0 for all edges
+- construct another graph with "remaining capacity" (maximum at the beginning) for all edges
+- while there is a path in the new graph
+    - find the maximum flow for the path
+    - add the flow to each edge on the path in the original graph
+    - in the new graph
+        - reduce the remaining capacities for each edge on the path
+        - add a "return edge" (an edge moving in the opposite direction but connecting the same nodes) with the amount of flow that was pushed through this time
+        - delete all edges with capacity 0
+
+O(|E|*f*) where *f* is the maximum number of augmented paths in the graph
 
 Assignment 1 Review
 -----
