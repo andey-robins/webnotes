@@ -195,6 +195,31 @@ Note: all wireless connections are considered to be on the edge of the network
 - access points have MAC addresses
     - they broadcast their SSID and MAC when someone comes into the network
 
+###802.11
+- uses CSMA/CA (collision avoidance) because we can't possibly detect collisions with all the noise
+    - to do CD we would have to be able to monitor the network while transmitting
+    - would have to transmit into the receiver
+        - would destroy the receiver or simply over saturate it
+    - makes detection impossible
+- uses ARQ to acknowledge or retransmit
+
+###CSMA/CA
+1. sense channel. if it's clear then wait a DIFS. if still clear send frame
+    - DIFS = distributed inter frame space. some random wait time
+2. if busy, set a counter to random backoff and continue sensing. while its clear countdown.
+3. when clear, send again
+4. if ACK received -> GOTO step 1. else GOTO step 2 with a large backoff
+
+###Hidden Terminal Problem
+- problem of two terminals not being able to see each other
+    - but they still share a single access point
+    - can be caused by:
+        - intervening structures
+        - geography
+        - fading
+- solution is only an optional part of the communication protocol
+- 
+
 
 Exam 2 Review
 -----
