@@ -64,6 +64,41 @@ Hint: `f :: a -> b -> ((a,b) -> c) -> c` = `f x y g = g (x,y)`
 - regular meeting place
 - minor syntax errors will only result in minor deductions
 
+Exam 1 Postmortem
+-----
+1. a) `pipe:: (a -> b) -> (b -> c) -> (a -> c)`
+
+    `pipe f g = g.f`
+
+    very similar to compose, but `(.):: (b -> c) -> (a -> b) -> (a -> c)` and so f needs to come first (i.e. `g (f x)` or `g.f`)
+
+2. iii) Write a tail-recursive version of int2Nat function
+
+    Driver/Seed: `int2Nat k = i2n k Z`
+    Base: `i2n 0 n = n`
+    Recursive: `i2n k n = i2n (k - 1) (S n)`
+
+    I was missing the driver so that there was no clear `Z` within my code which is what gives a valid `Nat` type
+
+4. b) Write implementations of *all* and *some* using *foldr* or *foldl*.
+
+    `all p = foldr (\x ans -> p x && ans) True`
+    `all p = foldl (\ans x -> ans && p x) True`
+
+    `some p = foldr (\x ans -> p x || ans) False`
+    `some p = foldl (\ans x -> p)`
+
+    folds capture within one pattern of recursion an entire tree of recursion with just one line
+        `(...((x 'op' f) 'op' f) ... 'op' f)`
+    you're kind of collapsing the list into one result
+
+5. a) What is the type of function `(uncurry . curry)`?
+
+    `(.)::(b -> c) -> (a -> b) -> (a -> c)`
+    `(uncurry . curry):: ((a,b) -> c) -> ((a,b) -> c)`
+
+    you got the type of `(.)` messed up dumb ass :p next time slow down and actually check for that stuff
+
 Building a Calculator
 -----
 `module calculator where

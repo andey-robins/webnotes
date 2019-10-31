@@ -251,6 +251,7 @@ Note: all wireless connections are considered to be on the edge of the network
 - 2.5G systems added data
 - 3G systems, voice and data, but the focus is speed
 - 4G systems, IP based, "fully" deployed in 2011/2012
+    - LTE is really only different in speed
 
 Exam 2 Review
 -----
