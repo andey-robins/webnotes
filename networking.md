@@ -218,8 +218,39 @@ Note: all wireless connections are considered to be on the edge of the network
         - geography
         - fading
 - solution is only an optional part of the communication protocol
-- 
 
+###Bluetooth
+- low power, short range, "cable replacement"
+- originally interfered with wireless devices
+    - added frequency hopping to prevent the issue (problem: 2.4 Ghz band is overused)
+- ad hoc networks
+    - operate as a "piconet"
+        - a tiny network
+    - 2 - 8 devices with one acting as a central hub
+- primary devices are the one that you need to spend any sort of money on
+    - creating bluetooth for a secondary device is trivial
+
+###Zigbee
+- similar to bluetooth
+    - low power, low duty rate
+- IoT devices like light switches, sensors, etc.
+
+###WiMAX
+- runs in parallel with wifi
+- also allows wide area communications
+- base station transmits
+    - subscribers pick it up
+- not a direct replacement for wifi
+    - higher powered
+    - requires some sort of client station
+        - something like a powered dish/antenna
+
+###Cellular Interent
+- 1G systems, analog voice only
+- 2G systems, voice only, digital replacement of 1G
+- 2.5G systems added data
+- 3G systems, voice and data, but the focus is speed
+- 4G systems, IP based, "fully" deployed in 2011/2012
 
 Exam 2 Review
 -----
