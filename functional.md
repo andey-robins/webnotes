@@ -125,3 +125,11 @@ it defines the equal property `==` for our new data object
     show (Fun f) = "Fun ... of something."`
 
 this redefines the show function to show our `Exp` data type
+
+Parsing
+-----
+Note: Functional Pearls: Monad Parsing in Haskell
+
+What is the type of a parser?
+String -> Tree
+String -> (Tree, String) : this makes sure you parse the first part and don't discard the end part

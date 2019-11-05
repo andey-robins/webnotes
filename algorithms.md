@@ -95,6 +95,24 @@ an algorithm to determine the network flow of the network:
 
 O(|E|*f*) where *f* is the maximum number of augmented paths in the graph
 
+NP Completeness
+-----
+- *n* queens problem
+    - place *n* queens on an *n x n* board such that none of them are attacking each other
+    - O(n^2n) (if we allow multiple queens on each tile)
+    - O(n^n) (consider rows instead of tiles)
+    - O(n!) (one queen per row and consider permutations)
+
+- "quality" of a decision only becomes apparent after making the choice
+    - sometimes long after making the choice
+- may need to make decisions to act intelligently
+- difficulty comes from not knowing what choices to make
+
+###Properties of NP Problems
+- hard to solve; easy to check
+- NP-hard: problem that is at least as hard as the hardest NP problem
+- NP-complete: NP-hard and in the complexity class NP (i.e no harder)
+
 Assignment 1 Review
 -----
 
