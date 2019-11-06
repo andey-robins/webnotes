@@ -310,3 +310,42 @@ Note: nothing from wireless is going to be on Exam 2
 - VLAN
     - why do it
     - how's it implemented
+
+Cryptography
+-----
+###Definitions
+plaintext - data to be encoded
+ciphertext - encoded data
+symmetric key - both parties have the same secret key
+public/asymmetric key - public and private key system
+
+####Vigenere Cipher
+uses the square thing - monoalphabetic square
+key word determines what column to pick from and plaintext determines row
+vulnerable to the kasiski attack
+frequency analysis attack
+
+####Block Ciphers
+1. divide input into fixed length blocks of bits
+2. use a 1-to-1 map to convert to a new block
+3. send new block
+- *k* sized block has 2^(k)! possible maps
+- effectively impossible for reasonably large data
+- requires a blend between oversized data storage and computability and sufficiently large sizing
+
+####Attacks
+- statistical analysis
+- known-plaintext Attack
+    - Start with a known text string that might have been encoded and compare it to ciphertext
+- chosen-plaintext attack
+    - encode a known string and compare it to the ciphertext
+
+####RSA
+- choose *p* and *q* such that their product is 1024 bits
+- n = pq and z = (p-1)(q-1)
+- choose e < n that is relatively prime with z
+- d is ed%z = 1
+- public key (n, e)
+- private key is (p, q)
+
+DES is much faster, so we encrypt plaintext with DES and the key with RSA. Then transmit the key and the ciphertext before decrypting.
