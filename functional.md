@@ -107,22 +107,22 @@ data Exp = C Int | V String | Plus Exp Exp | Fun (Int -> Int)    deriving Show`
 
 so C is a constructor that takes in an Int and returns an `Exp` expression.
 
-`instance Eq Exp where
-    (C 0) == (C 0) = True
-    (C 1) == (C 0) = True
-    (C 2) == (C k) = k >= 2
-    (C k) == (C 2) = k >= 2
-    V s1 == V s2 = s1 == s2
-    _ == _ = False`
+`instance Eq Exp where`
+    `(C 0) == (C 0) = True`
+    `(C 1) == (C 0) = True`
+    `(C 2) == (C k) = k >= 2`
+    `(C k) == (C 2) = k >= 2`
+    `V s1 == V s2 = s1 == s2`
+    `_ == _ = False`
 
 this is a crow-counter where you can only count up to 2. everything [0,2] can be accurately compared, but everything above that is simply treated the same
 it defines the equal property `==` for our new data object
 
-`instance Show Exp where
-    show (C k) = show k
-    show (V x) = show x
-    show (Plus e1 e2) = "Plus " ++ (show e1) ++ (show e2)
-    show (Fun f) = "Fun ... of something."`
+`instance Show Exp where`
+    `show (C k) = show k`
+    `show (V x) = show x`
+    `show (Plus e1 e2) = "Plus " ++ (show e1) ++ (show e2)``
+    `show (Fun f) = "Fun ... of something."`
 
 this redefines the show function to show our `Exp` data type
 

@@ -141,3 +141,18 @@ My work for this assignment can be found [here](https://github.com/andey-robins/
 5.  be very careful when using mixed notation (i.e. decimal probabilities and percentage probabilities)
     include full calculations for fractions to try to avoid errors
     the approach of representing all possible locations picked from and then checking which representations resulted in good picks, then yes
+
+Dynamic Programming and Memoization
+-----
+the idea behind dynamic programming is to take the algorithms we've been working with and make them more efficient by removing repeated work.
+
+tail recursion fits into this area. a function is "tail recursive" if for any recursive call in the function, that call is the last thing the function needs to do before returning. you can always think about converting to a tail recursive solution if it would be easy, because then you get automatic compiler optimizations
+
+###Fibonacci
+instead of doing two branches down the tree, we want to "share" results/nodes.
+
+there are two big ways to do it, bottom up dynamic programming (i.e. working up from the bottom of the call tree instead of working down from the top), or memoization where you save the values when you compute them and instead just check if the value already exists.
+
+bottom up is calculating it in the same way a human would.
+
+memoization is like a blend. it uses recursive calls, but it stores found values so they aren't computed twice. the big downside of this implementation is that there can be very large memory overheads.
