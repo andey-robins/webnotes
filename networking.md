@@ -349,3 +349,8 @@ frequency analysis attack
 - private key is (p, q)
 
 DES is much faster, so we encrypt plaintext with DES and the key with RSA. Then transmit the key and the ciphertext before decrypting.
+
+Authentication
+-----
+
+with hashing, we must find two strings that "must be computationally infeasible to find two strings such that their hash values are the same."
