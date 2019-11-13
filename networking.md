@@ -350,7 +350,38 @@ frequency analysis attack
 
 DES is much faster, so we encrypt plaintext with DES and the key with RSA. Then transmit the key and the ciphertext before decrypting.
 
-Authentication
------
+####Authentication
 
 with hashing, we must find two strings that "must be computationally infeasible to find two strings such that their hash values are the same."
+
+####Wireless Security
+initially we used WEP (wireless equivalent privacy) this was basically the same level of security a wired network would provide. for general security, such as your home stuff, this is generally good enough; however, if you listen to 12 000 frames, you have a 99% probability of being able to crack the security. then moved to wifi protected access (WPA/WPA2). the latest WPA2 vulnerability allows you to insert keys on initial handshake.
+
+Missed:
+PGP, SSL, VPN
+
+Management
+-----
+how do apply the concepts of security to secure the systems that we use. the people doing this are the sysadmins of the world or your IT departments. managment teams are all about making decisions about backups, security, etc; repairing/replacing hardware; allocating resources; network traffic monitoring and specifications; service allotments.
+
+####Firewalls
+- at the most simple level, it just blocks all ports
+- manually open the ports you plan to use
+- also, blocking everything causes a problem, so we can install a packet filter
+    - examines packets coming in
+    - can also look at things going out
+    - buckner says that UW should be filtering outbound traffic
+        - it's a security thing
+        - but "people don't give a shit about their security"
+        - it's convenient to host things on the cloud
+
+####Enterprise Systems
+- a hardware machine that does the filtering
+- software firewalls on all internal machines
+- software firewalls on edge devices
+- some ICMP supression on edge machines
+
+####IDS
+- does deep inspection of a packet
+- tries to determine if the packet is malicious
+- give it infor on known attacks/viruses/worms
