@@ -385,3 +385,33 @@ how do apply the concepts of security to secure the systems that we use. the peo
 - does deep inspection of a packet
 - tries to determine if the packet is malicious
 - give it infor on known attacks/viruses/worms
+
+Exam 3 Content Review
+-----
+- Same format as last time
+- Chapter 7
+    - difference between infrastructure and ad hoc mode
+    - SNR and BER and how they're related
+    - problems with transmission
+        - hidden terminal problem
+        - fading
+    - 802.11 communications
+    - difference between CSMA/CD and CSMA/CA
+    - RTS and CTS usage and why
+    - how do mobile hosts move between access points and networks
+    - very basic bluetooth information
+    - cellular networks
+        - basics
+        - don't need to know like GSM and GPRS
+        - how calls are directed
+        - handoff basics
+- Chapter 8
+    - security basics
+    - symmetric key systems
+    - public key systems
+    - Certificate authorities
+    - hashes
+
+Multimedia Applications
+-----
+So, what are multimedia applications? In general they are less tolerant to problems and delay sensitive when compared to apps like FTP or email. Content has already been "pre-recorded" and is simply being streamed out. There's also the streaming of live data (i.e. livestreaming). It also includes real-time interactive content like video conferencing and phone services.
