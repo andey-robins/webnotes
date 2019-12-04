@@ -415,3 +415,12 @@ Exam 3 Content Review
 Multimedia Applications
 -----
 So, what are multimedia applications? In general they are less tolerant to problems and delay sensitive when compared to apps like FTP or email. Content has already been "pre-recorded" and is simply being streamed out. There's also the streaming of live data (i.e. livestreaming). It also includes real-time interactive content like video conferencing and phone services.
+
+###Recovery
+two options: forward based recovery and receiver based recovery. Receiver based is where if a packet is missed, the client takes the responsibility to correct/recover. This could be repeating the packet before the lost one or something like interpolation. Interpolation works fine for video, but it really breaks down for audio.
+
+###CDN - Content Distribution Network
+A content creator pushes to the CDN and the CDN is where people would get that content from.
+
+###RTP - Real-time Transport Protocol
+The "standard" data transfer protocol for real time data. It's an application layer protocol that runs on UDP. There is also a RTP Control Protocol that includes information like packet loss, jitter, delay, etc.
