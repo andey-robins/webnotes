@@ -133,3 +133,16 @@ Note: Functional Pearls: Monad Parsing in Haskell
 What is the type of a parser?
 String -> Tree
 String -> (Tree, String) : this makes sure you parse the first part and don't discard the end part
+
+Compiling
+-----
+`ghc -o cp cp.hs` will compile `cp.hs` into an executable called `cp`
+
+`main = do`
+`       (f1:f2:_) <- getArgs`
+`       cp f1 f2`
+`cp f1 f2 = {...}`
+
+above is the boilerplate to get arguments and pass them to the function that does the work.
+
+`getArgs::IO [String]`
