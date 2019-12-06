@@ -424,3 +424,54 @@ A content creator pushes to the CDN and the CDN is where people would get that c
 
 ###RTP - Real-time Transport Protocol
 The "standard" data transfer protocol for real time data. It's an application layer protocol that runs on UDP. There is also a RTP Control Protocol that includes information like packet loss, jitter, delay, etc.
+
+Final Exam Content
+-----
+two sessions for the exam, either next friday or the one during finals week.
+final is comprehensive
+solutions to all homework and exams will be online by thursday the 12th
+last exam was chapters 6, 7, and 8. since then, we've hit chapter 9 (multimedia)
+
+###chapter 9 content overview
+ - multimedia applications
+ - general characteristics
+ - RTSP basics
+ - delay, jitter, and playout
+ - loss recovery
+ - content distribution networks
+ - RTP and RTCP basics
+ - SIP basics
+ - quality of service and guarantees
+
+don't worry about formulas or specifics of protocols
+the final exam is basically big picture stuff
+
+###concepts
+- how does a host manage traffic
+- if it has one wired connection how does a host differentiate between packets that are received
+- what are sockets? what are ports?
+    - what do they provide to the network model?
+- how does a router work?
+- look at autonomous systems
+- RIP, OSPF, and BGP
+- distance-vector vs link-state
+- DNS
+- sending and receiving packets
+- nothing about phones :)
+- many questions about 802.11 wireless connections
+- CSMA/CA and CSMA/CD
+    - similar and different and why?
+- sheet with all the acronyms will be provided
+- security basics
+- symmetric key systems
+- public key systems
+- CAs
+- hashes
+    - why do we use hashes?
+- the three types of queuing
+    - FIFO
+    - round robin
+    - Weighted Fair Queuing
+- methods and types of QoS
+    - issues with QoS
+    - where can we try to provide for this
