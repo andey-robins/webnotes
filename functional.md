@@ -146,3 +146,19 @@ Compiling
 above is the boilerplate to get arguments and pass them to the function that does the work.
 
 `getArgs::IO [String]`
+
+Formulas
+-----
+formulas = ┴ | *x* | f_1 => f_2 | f_1 && f_2
+┴ is false
+x = {p, q, r, p_1, q_1, ... }
+f_1, f_2 are formulas
+
+in the types language, we could write implies as -> and && as a cross product
+
+programming language terms = x | t_1 t_2 | lambda x t_1 | (t_1, t_2) | fst t_1 | snd t_1 | any x
+x is vars = {x, y, z ...}
+t_1, t_2 are terms and they represent apply t_1 to t_2
+
+from there we can make sequents
+([(String, Formula), [Formula]])
