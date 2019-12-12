@@ -162,3 +162,40 @@ t_1, t_2 are terms and they represent apply t_1 to t_2
 
 from there we can make sequents
 ([(String, Formula), [Formula]])
+
+Basically, we constructed a program that takes a proof and then returns the program embedded in the proof
+
+Final Review
+-----
+* No induction on lists stuff.
+* folds and maps on trees
+    * writing basic functions on trees
+    * building a tree from lists
+* a question where you have to write a small interpreter
+    - `data Bool = V String | Not Bool | Bool 'AND' Bool | False | Bool 'OR' Bool | Bool 'WHERE' String Bool`
+    - `eval::(String -> Int) -> Bool -> Int`
+    - `eval a (V x) = a x`
+    - `eval a (Not b) = (eval a b) + 1 mod 2`
+    - `eval a (b1 'AND' b2) = (eval a b1) * (eval a b2)`
+    - `eval a (False) = 0`
+    - `eval a (b1 'OR' b2) =  (eval a b1) + (eval a b2)`
+    - `update::(a,b) -> (a -> b) -> (a -> b)`
+    - `eval a (b1 'WHERE' x b2) = eval (update(x, eval a b2) a) b1`
+    - `|= eval a' b1 where a' = update(x, eval a b2)`
+* "definitely some simple questions on parsers"
+    * you will have some small example parser to remember how to put them together
+    * you will also have access to the super basic parsers
+    * the example parses the grammar defined in the left recursion part of this review, it just doesn't have the bool' part
+    - `whereP b = do symbol "where"; x <- identifier; symbol "="; b1 <- boolP; return (Where b x b1)`
+* small eliminate direct left recursion
+    * algorithm will be given
+* left recursion
+    - `Bool = Var | "~" Bool | Bool "&" Bool | "True" | Bool "where" Var "=" Bool`
+    * these are b1 | b2 | a1 | b3 | a2 where a is alpha and b is beta
+    - `Bool  -> Var Bool' | Not Bool Bool' | True Bool'`
+    - `Bool' -> AND Bool Bool' | WHERE Var = Bool Bool' | Epsilon`
+    * More generally data is all (b data') where b are the betas
+    * data' is (a data') | Epsilon where a is the alphas
+* writing instances of the `Eq` typeclass
+    * equality will be specified, and we just need to implement it
+* nothing on `IO()`
