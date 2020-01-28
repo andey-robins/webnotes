@@ -1,8 +1,13 @@
 # Webnotes
 
-[Networking](networking.md)
-[Algorithms](algorithms.md)
-[Functional](functional.md)
+[Computability](computability.md)
+[Programming Langauges](ppl.md)
+[Creative Writing](creative.md)
+
+[Fall 2019]()
+  * [Networking](./fall_2019/networking.md)
+  * [Algorithms](./fall_2019/algorithms.md)
+  * [Functional](./fall_2019/functional.md)
 
 [Spring 2019]()
 
