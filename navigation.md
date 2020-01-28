@@ -3,6 +3,7 @@
 [Computability](computability.md)
 [Programming Langauges](ppl.md)
 [Creative Writing](creative.md)
+[Ethics](ethics.md)
 
 [Fall 2019]()
   * [Networking](./fall_2019/networking.md)
