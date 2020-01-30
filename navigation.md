@@ -6,6 +6,7 @@
 [Ethics](ethics.md)
 
 [Fall 2019]()
+
   * [Networking](./fall_2019/networking.md)
   * [Algorithms](./fall_2019/algorithms.md)
   * [Functional](./fall_2019/functional.md)
