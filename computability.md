@@ -59,3 +59,10 @@ Let M = (Q, Σ, 𝛅, q_0, F) be a DFA:
 2. The language accepted by M is L(M) = { w in Σ\* | M accepts w}
 
 Effectively, a DFA accepts a word if, on that input, the DFA will conclude on an accepting state. The set of all words that fit within the language is then denotes at L(M)
+
+Alternatively, you can define it inductively using an extension 𝛅\* : Q x Σ\* -> Q for all q in Q, 𝛅\*(q, 𝜀) = q and for all q in Q, w in Σ\* and a in Σ, 𝛅\*(q, wa) = 𝛅(𝛅*(q, w), a). In this statement, a is a character while w is a string. It's effectively extending the string indefinitely a la an inductive proof (woah). Defining 𝛅\* as an extension allows us to include an action where we do nothing on the empty string, which enables the base case of the inductive proof.
+
+Let M = (Q, Σ, 𝛅, q_0, F) be a DFA. Let w in Σ\*. We say that M accepts w if 𝛅\*(q_0, w) in F. The language accepted by M is L(M) = { w in Σ\* | 𝛅\*(q_0, w) in F }.
+
+####Regular Languages
+A language is regular if it is the language for some DFA. B subset Σ\* is regular if B = L(M) for some DFA M. The DFA can distinguish if the language is regular if M accepts w.
