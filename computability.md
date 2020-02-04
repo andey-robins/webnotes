@@ -66,3 +66,30 @@ Let M = (Q, Σ, 𝛅, q_0, F) be a DFA. Let w in Σ\*. We say that M accepts w i
 
 ####Regular Languages
 A language is regular if it is the language for some DFA. B subset Σ\* is regular if B = L(M) for some DFA M. The DFA can distinguish if the language is regular if M accepts w.
+
+###Defining Binary Inductively
+Using our rules of words and languages, we can define the binary function over x in {0,1}\* as bin(x). This can be inductively defined by a base case bin(𝜀) = 0. For any x, bin(x0) = 2bin(x); and bin(x1) = 2bin(x) + 1. Now, let us show that T = {x in {0,1}\* | bin(x) is a multiple of 3}. ![Here is a DFA that accepts T](./images/computability-dfa-binarymod3.png)
+
+<img src="./images/computability-dfa-binarymod3.png"
+     alt="A DFA that accepts T"
+     style="float: right; margin-left: 10px;" />
+
+Q = {0, 1, 2}
+Z = {0, 1}
+𝛅 = Q x Σ -> Q
+𝛅(q, b) = 2q + b (mod 3)
+
+Claim: For all x in {0, 1}\*; 𝛅\*(0, x) = bin(x) mod 3
+The proof follows.
+
+Base:
+x = 𝜀: bin (x) = 0.
+𝛅\*(0, 𝜀) = 0 = bin(𝜀)
+
+Induction:
+Suppose the claim holds for some string x in {0, 1}\*
+𝛅\*(0, x) = bin(x) mod 3
+
+For convenience, we will prove 𝛅\*(0, xb) = bin(xb) where b in {0,1}
+
+<!-- Transcribe proof from slides [35-41] -->

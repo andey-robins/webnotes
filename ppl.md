@@ -16,6 +16,56 @@ In the top level, programming languages are broken up between imperative and dec
 
 Language Construction
 -----
-In the field of programming languages there is syntax, or the form of languages, and semantics, or the meaning of languages. In the realm of syntax, BNF, or Backus Naur Form, is the way that we describe the form of the language; alternatively, context free grammars can be used to describe the syntax. On the other side, in order to describe symantix we can use axiomatic semantics, denotational semantics, and operational symantics. One reductive way to think of semantics as if two programs produce the same outputs given the same inputs. They effectively do the same thing. 
+In the field of programming languages there is syntax, or the form of languages, and semantics, or the meaning of languages. In the realm of syntax, BNF, or Backus Naur Form, is the way that we describe the form of the language; alternatively, context free grammars can be used to describe the syntax. On the other side, in order to describe symantix we can use axiomatic semantics, denotational semantics, and operational symantics. One reductive way to think of semantics as if two programs produce the same outputs given the same inputs. They effectively do the same thing.
 
 Context free grammars are languages where the meaning is not dependent on where clauses occur within the language. This is a part of compositional languages where the meaning of the whole is a function of the meaning of the parts. A language is a subset of Σ\* where Σ is an alphabet and Σ\* is a set of all words in that alphabet. We know how to write algorithms that recognize the elements of a context-free grammar language. Context sensitive languages are neither compositional nor do we know how to write algorithms to understand them.
+
+Mathematical Fundamentals Review
+-----
+A brief review of the mathematic fundamentals for this class.
+
+###Boolean Connectives
+&& - and
+|| - or
+-> - implies
+! - not
+<=> - iff: p->q && q->p
+
+|p|q|p && q|p or q|p -> q|!p|p< => q
+|---|---|---|---|---|---|---|
+|T|T|T|T|T|F|T|
+|T|F|F|T|F|F|F|
+|F|T|F|T|T|T|F|
+|F|F|F|F|T|T|T|
+
+###Quantifiers
+upside down A - forall
+backwards E - exists
+
+forall X:T.F
+exists X:T.F
+
+X is a variable
+T is a type or set
+F is a formula
+
+###BNF For Formulas
+F := x | !p | p && q | p || q | p -> q | forall x.p | exists x.p | ... (other things that create arithmetic formulas)
+
+x in var; var = {x, y, z, x1, y1, z1, x2, y2, z2, ... }
+P, Q in F
+
+forall x. exists y. y + y x
+the above statement is true based upon what the domain of discourse is.
+
+a way to conceptualize this is that: forall x:N. p(x) says that p(0) && p(1) && p(2) && ...
+exists x:N. p(x) says that p(0) || p(1) || p(2) || ...
+
+###Relations
+If R subset AxA, then:
+  * R is reflexive iff forall x:A. <x,x> in R
+Note: We write xRy to mean <x,y> in R
+  * R is symmetric iff forall x,y:A. xRy -> yRx
+  * R is transitive iff forall x,y,z:A. (xRy && yRz) -> xRz
+
+If you satisfy all three of these properties with a relation, then it's an equivalence relationship.
