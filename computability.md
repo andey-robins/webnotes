@@ -70,10 +70,6 @@ A language is regular if it is the language for some DFA. B subset Σ\* is regul
 ###Defining Binary Inductively
 Using our rules of words and languages, we can define the binary function over x in {0,1}\* as bin(x). This can be inductively defined by a base case bin(𝜀) = 0. For any x, bin(x0) = 2bin(x); and bin(x1) = 2bin(x) + 1. Now, let us show that T = {x in {0,1}\* | bin(x) is a multiple of 3}. ![Here is a DFA that accepts T](./images/computability-dfa-binarymod3.png)
 
-<img src="./images/computability-dfa-binarymod3.png"
-     alt="A DFA that accepts T"
-     style="float: right; margin-left: 10px;" />
-
 Q = {0, 1, 2}
 Z = {0, 1}
 𝛅 = Q x Σ -> Q
@@ -93,3 +89,30 @@ Suppose the claim holds for some string x in {0, 1}\*
 For convenience, we will prove 𝛅\*(0, xb) = bin(xb) where b in {0,1}
 
 <!-- Transcribe proof from slides [35-41] -->
+
+Nondeterministic Finite Automata
+-----
+These are very similar to DFAs, but they can have multiple transitions for the same value. They are more difficult to reason about because there is not necessarily one thing that must happen from each state with any given input.
+
+###Definition of an NFA
+A deterministic finite automaton is a 5-tuple M = (Q, Σ, 𝛅, q_0, F) where:
+- Q is finite set of states
+- Σ is an alphabet
+- 𝛅 : Q x Σ_𝜀 -> P(Q) is the transition function
+    - this is the power set, or set of all subsets
+- q_0 in Q is the initial state
+- F is a subset of Q and is the set of accepting states
+
+Σ_𝜀 = Σ U {𝜀} to allow for 𝜀-transitions
+𝛅(q, a) is a set of states rather than a single state - this represents nondeterminism.
+
+in the example figure, 𝛅(q, a) = {q, r} since an input of a can transition to state q or state r.
+
+###Acceptance for an NFA
+An NFA accepts an input if there is some sequence of steps for an input that leads to an accepting state. Furthermore, the input must be fully read. If you get to an accepting state and then immediately dump it, that still fails.
+
+<!-- Transcribe definition for acceptance -->
+
+A Problem in both DFA and NFA Form.
+-----
+<!-- Include images created during class today -->

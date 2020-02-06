@@ -62,9 +62,10 @@ a way to conceptualize this is that: forall x:N. p(x) says that p(0) && p(1) && 
 exists x:N. p(x) says that p(0) || p(1) || p(2) || ...
 
 ###Relations
+Note: We write xRy to mean <x,y> in R
+
 If R subset AxA, then:
   * R is reflexive iff forall x:A. <x,x> in R
-Note: We write xRy to mean <x,y> in R
   * R is symmetric iff forall x,y:A. xRy -> yRx
   * R is transitive iff forall x,y,z:A. (xRy && yRz) -> xRz
 
