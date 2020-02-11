@@ -70,3 +70,36 @@ If R subset AxA, then:
   * R is transitive iff forall x,y,z:A. (xRy && yRz) -> xRz
 
 If you satisfy all three of these properties with a relation, then it's an equivalence relationship.
+
+Abstract Syntax
+-----
+The following syntactic categories are defined.
+
+###Syntactic Categories
+ * n in Num - Numerals: "0" "1" "110" "90"
+ * x in Var - Variables
+ * a in Aexp - Arithmetic Expressions
+ * b in Bexp - Boolean Expressions
+ * S in Stm - Statements
+
+###Formation Rules
+Notably, the statement descriptions are missing expressions. The if statement wouldn't be able to do something such as `x = if x < 0 then 7 else x+1` as is done in haskell.
+
+ * S ::= x := a | skip | S1;S2 | if b then S1 else S2 | while b do S
+ * a ::= n | x | a1 + a2 | a1 * a2 | a1 - a2 | (a)
+ * b ::= a1 = a2 | a1 < a2 | !b1 | b1 && b2 | (b1)
+
+###Conventions
+ * write a1 != a2 for !(a1 = a2)
+ * S1; S2; S3 means S1; (S2; S3)
+    * the book calls this left associative.
+    * it's actually right associative
+ * A transition system is a triple (Γ, ->, T)
+    * Γ is a set of "configurations"
+    * -> is a subset of Γ x Γ and is called the transition relation
+    * T is a subset of Γ is the set of terminal configurations
+
+###Big Step Semantics (AExp)
+ - Γ = AExp U INT
+ - -> subset AExp x INT
+ - T = INT
