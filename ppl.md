@@ -100,6 +100,16 @@ Notably, the statement descriptions are missing expressions. The if statement wo
     * T is a subset of Γ is the set of terminal configurations
 
 ###Big Step Semantics (AExp)
+We have a transition system where AExp = (Γ, ->, T) and the symbols are of type:
+
  - Γ = AExp U INT
- - -> subset AExp x INT
+    - configurations
+ - -> subset of AExp x Γ
+    - transition relation
  - T = INT
+    - terminal configurations
+
+Theorem: The -> (transition relation) is deterministic.
+If a1 -> v1 and a1 -> v2 then v1 = v2
+
+You can go about proving this inductively using the height of the derivation. 
