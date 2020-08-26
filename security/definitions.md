@@ -21,12 +21,12 @@ A page for the collection of terms and their definitions for the course.
 |Authenticity|An object has integrity and is "fresh" -or- you're talking to who you think you are||
 |Trust|"A trusted system or component is one that can break my security policy" -The NSA||
 |Error|A deviation from expected behavior|Expect the response 200 but get 401|
-|Failure|A system that fails to act in the way it was designed to||
-|Reliability|Probability of failure||
-|Availability|Probability a system is operational||
-|Risk|Probability of an accident||
-|Accident|An unplanned event that results in some loss||
-|Hazard|Conditions where a failure can lead to an accident||
+|Failure|A system that fails to act in the way it was designed to|A bike not spinning the wheels while pedaling|
+|Reliability|Probability of failure|The chance of your bike breaking|
+|Availability|Probability a system is operational|How often your bike functions as intended|
+|Risk|Probability of an accident|The chance your bike will break|
+|Accident|An unplanned event that results in some loss|The chain falling off during a bike ride|
+|Hazard|Conditions where a failure can lead to an accident|Riding your bike while the chain is ungreased|
 |Critical System|A condition where a failure will result in an accident|A CPU; if it breaks the computer won't function|
 |Uncertainty|A non-quantifiable risk||
 |Safety|Freedom from accidents||
