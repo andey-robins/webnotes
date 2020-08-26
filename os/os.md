@@ -7,3 +7,4 @@ Code and assignments associated with this class are available [here](https://git
 Table of Contents
 -----
 [Introduction](http://andey-robins.github.io/webnotes/mdwiki#!./os/introduction.md)
+[Programs](http://andey-robins.github.io/webnotes/mdwiki#!./os/programs.md)
