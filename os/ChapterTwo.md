@@ -57,21 +57,21 @@ In this chapter we begin to dive a bit more into the structures of operating sys
 Design of an OS is not solvable, but some approaches have proven successful. Kernel size becomes a balancing act. If it's too small, then there's too little support at higher levels. If it's too big, then there isn't enough flexibility at the higher levels. Another problem is how do we actually generate an install for the Operating System. 
 
 ### Each begins with some user/system goals:
-    - easy to use, easy to learn, reliable, safe, fast
-    - easy to design, implement, maintain, flexible, reliable, error-free, efficient
+- easy to use, easy to learn, reliable, safe, fast
+- easy to design, implement, maintain, flexible, reliable, error-free, efficient
 
 ### Two things:
-    - policy: what will be done
-    - mechanism: how it will be done
+- policy: what will be done
+- mechanism: how it will be done
 
 ### General Implementation:
-    - Earliest OSes were entirely in assembly
-    - then Algol
-    - now C and/or C++
-    - nearly always a mix of languages now
-        - scripting
-        - systems languages in C
-        - the higher level it gets, the easier it is to write but the slower you have to be
+- Earliest OSes were entirely in assembly
+- then Algol
+- now C and/or C++
+- nearly always a mix of languages now
+    - scripting
+    - systems languages in C
+    - the higher level it gets, the easier it is to write but the slower you have to be
 
 ### DOS
 The first OS with an impact. It needed to be very, very small. It fit onto a single boot disk (on a floppy disk). It wasn't well separated, and its interfaces and levels of functionality were tied together. The Application ran into the System program and the BIOS device. The System program ran into DOS device drivers and the BIOS device. Then DOS would feed into the BIOS. Sometimes applications didn't even need to interact with DOS, and they would just ignore it. It was fast and easy to implement, but difficult to debug, modify, or upgrade, and it had poor security, protection, and stability because the whole OS exists in memory at once.
