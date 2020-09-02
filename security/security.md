@@ -8,4 +8,5 @@ Table of Contents
 -----
 [Introduction](http://andey-robins.github.io/webnotes/mdwiki#!./security/introduction.md)
 [Definitions](http://andey-robins.github.io/webnotes/mdwiki#!./security/definitions.md)
+[Opponents](http://andey-robins.github.io/webnotes/mdwiki#!./security/opponents.md)
 [Psychology of Systems](http://andey-robins.github.io/webnotes/mdwiki#!./security/psychology.md)
