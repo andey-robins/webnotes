@@ -8,6 +8,6 @@ Table of Contents
 -----
 [Introduction](http://andey-robins.github.io/webnotes/mdwiki#!./os/introduction.md)
 [Programs](http://andey-robins.github.io/webnotes/mdwiki#!./os/program.md)
-[Chapter 1](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapterOne.md)
-[Chapter 2](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapterTwo.md)
-[Processes](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapterThree.md)
+[Chapter 1](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapter01.md)
+[Chapter 2](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapter02.md)
+[Processes](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapter03.md)
