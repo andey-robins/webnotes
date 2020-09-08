@@ -21,3 +21,7 @@ This is essentially a refresher. It's a warm up and ensures you learn how to use
 - the `prog1-example.h` is an example header file
     - you can use this
 - you may have commits in the midst of the ones presented
+
+Program 2
+-----
+This is the first of the more complicated ones. Requires writing two separate programs: a *commander* and *process manager*. We'll come back to it after the fork, exec, pipe lecture.

@@ -186,4 +186,37 @@ Process: A program in execution. Process execution must progress sequentially
 - if both send and receive are blocking, we have a rendezvous
 
 ## Communication
--- 1:04:36 -- 
+- four methods:
+    - sockets
+    - remote procedure calls
+    - pipes (what we'll use in program two)
+    - remote method invocation (java)
+
+### Sockets
+- socket: an endpoint for communication
+- refered to with an IP and port number
+- host X (146.86.5.20 w/ socket bound at 1625) and web server (161.25.19.8:80)
+    - you can then send that information to the socket of the service you're trying to talk to
+- connection oriented (TCP) or connectionless (UDP)
+
+### Remote Procedure Calls (RPC)
+- abstracts the process of calling a procedure to be able to function across a networked system
+- stubs: client-side proxy for the actual procedure on the server
+- client stub marshalls the parameters and sends them to the server
+- server returns the code or the results
+
+### Pipes
+- acts as a conduit between two processes
+- issues:
+    - uni- or bi-directional?
+    - half- or full-duplex?
+    - does there need to be a relationship between processes
+    - can we use them over the network?
+- ordinary pipes follow the producer-consumers style
+    - has a write end for the producer
+    - has a read end for the consumer
+    - unidirectional
+- named pipes
+    - more powerful than ordinary pipes
+    - bidirectional
+    - created independent of an individual process
