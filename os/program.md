@@ -24,4 +24,20 @@ This is essentially a refresher. It's a warm up and ensures you learn how to use
 
 Program 2
 -----
-This is the first of the more complicated ones. Requires writing two separate programs: a *commander* and *process manager*. We'll come back to it after the fork, exec, pipe lecture.
+This is the first of the more complicated ones. Requires writing two separate programs: a *commander* and *process manager*. Model the example2 code provided in the fork, exec, pipe lecture. If written correctly, it should take about 5 minutes to run.
+
+### Commander Process
+- takes input from a command line
+- passes them to the process manager
+- do not open the file in the commander
+    - easily pipe the file commands into the commander with `./cmdr < hw2_input`
+
+### Process Manager
+- will act as a scheduler
+    - simulates the scheduling algorithm provided
+- has to maintain a PCB table
+- if you write C correctly, it will end by calling Q
+- P will fork and execute all the code for the reporter
+- you can use an array of 100 elements for the PCB table
+- rid 0, 1, and 2 are all queue arrays
+- formatting for output is provided in `addon.txt`
