@@ -107,4 +107,53 @@ All other scheduling is preemptive
     - the quantum time could change quantum size itself, but that adds too much complexity
 
 ### Priority Scheduling
---37:09--
+- not all processes are equally important, so each one gets some sort of priority
+- if multiple have the same priority, round robin among those
+- a priority integer is associated w/ each process
+- problem - los priority processes may never execute
+- array of priority queues
+    0. P -> Q -> R
+    1. O -> S
+    2. 
+    3. A
+    4. C
+    - the problem arrises when P, Q, and R will require days while A only needs 30 seconds
+- to solve the problem, implement aging
+    - the longer a process has sit in the queue, the higher its priority will be
+
+#### Multiple Queues with Dynamic Priority
+- processes are once again divided into 2 classes
+    - CPU bound
+    - I/O bound
+
+- if you know the process is:
+    - I/O bound then it will use the processor for a shorter time
+    - therefore they get higher priority
+
+- should I/O and CPU quantums be the same?
+    - vary quantum w/ dynamic priority (program 2 in a nutshell)
+    - higher priority = lower quantum and lower priority = higher quantum
+
+- how do we know I/O vs CPU bound?
+    - figure it dynamically
+    - any process coming in has priority 0
+    - if a running process uses its quantum, then lower its priority by 1
+    - if the process blocks, raise the priority by 1
+
+### Multi-Processor Scheduling
+- very complex
+- if the processor is heterogenoous, then it's very difficult to determine what goes where and when
+- if it's homogenous, then its a question of load balancing
+    - symmetric vs asymmetric
+    - symmetric:
+        - each processor self-schedules
+        - need to synch the schedulers
+    - asymmetric:
+        - one CPU becomes the master and is in charge of giving processes to other processors
+
+- affinity:
+    - processor wanting to stay on the CPU it's already on since it has the quicker access to that memory
+
+### Multicore Processors
+- multiple processors on the same physical chip
+- removes the memory problems of multi-processors through mutlithreading
