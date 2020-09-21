@@ -12,3 +12,4 @@ Table of Contents
 [Chapter 2](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapter02.md)
 [Processes](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapter03.md)
 [Scheduling](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapter04.md)
+[Threading](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapter05.md)
