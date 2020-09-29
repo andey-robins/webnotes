@@ -53,3 +53,44 @@ mylock.unlock();
 
 ## Busy Loop Problem
 - waiting in a busy loop, your priority crashes, and you're wasting your CPU time waiting
+
+### Solution
+- take your process off the CPU for a definite amount of time
+- can use sleep() and wakeup()
+    - a sleeping process can't wake itself
+- can slowly get lots sleeping at once if interrupts happen in undesirable ways
+
+## Deadlock
+- easy to arrive at while using semaphores
+- happens when two processes each close a semaphore and then wait on the other semaphore
+
+## Semaphores
+- Synchronization tool that doesn't require busy waiting
+- Each semaphore contains a non-negative integer
+    - used to count number of sleep/wakeups
+- two operations on semaphores
+    - wait() and signal()
+- counting semaphore
+    - integer value domain unrestricted
+- binary semaphore
+    - only 0 or 1
+- C++ mutex can be used as a semaphore with value 1
+
+### Problems
+- biggest problem is incorrect usage of semiphores
+- other primitives exist to try to help
+    - monitors are the big one
+
+
+### Code
+```
+Semaphore S; // initialized to 1
+wait (S); // allows 1 process into the critical section
+// critical section code
+signal (S); 
+```
+
+## Monitors
+- "an object oriented semiphore"
+- a monitor guarantees only one process will be in the monitor at any given time
+- uses wait and signal again
