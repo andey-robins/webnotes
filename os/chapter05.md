@@ -43,3 +43,30 @@ Threads run within an application (process). It's the ability to do simple tasks
 
 ### Two-level Model
 - Allows a user thread to be bound to a kernel thread
+
+## Writing Threads
+Uses `thread.h` library.
+- the subroutine to call must be void
+```
+// create the thread
+thread t1;
+// call the subroutine
+t1 = thread(subroutine);
+// wait for it to join before quitting
+t1.join();
+```
+- Requires c++11 standard for compilation.
+
+### Mutex Code
+```
+#include<mutex>
+mutex mLock;
+mLock.lock();
+// critical region
+mLock.unlock();
+```
+
+### Semaphore.h
+sem_init -> initializes a sempahore
+sem_wait -> wait for a method
+sem_post -> signal the sempahore
