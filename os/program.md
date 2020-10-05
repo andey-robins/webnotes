@@ -41,3 +41,17 @@ This is the first of the more complicated ones. Requires writing two separate pr
 - you can use an array of 100 elements for the PCB table
 - rid 0, 1, and 2 are all queue arrays
 - formatting for output is provided in `addon.txt`
+
+Program 3
+-----
+- don't use pthreas
+- examples are provided
+- four programs to create
+- 1, 2, and 4 are from scratch, 3 is from example
+- Note, you cannot add anything at all to number 3. No new variables, methods, or semaphores
+    - should be fixable with only a few if statements (15 characters)
+- For 1, implement the dining philosopher problem
+    - lots of examples in the lectures
+    - run for forever; if it exits, its wrong
+- For 2, run with 10 eaters and 5 max pot size
+- For 4, don't worry about which one gets fixed first
