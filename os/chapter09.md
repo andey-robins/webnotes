@@ -28,5 +28,14 @@ Logical vs physical addresses are the main distinction. We don't work with physi
 - the big problem with swapping is the time to perform a context switch
 
 ## Segmentation
+- you can split up logical segments into individual pieces
+- places chunks into segments
+    - tracked in a segment table
+        - requires all of the locations to now be tracked across segments and not just processes
+        - relocation is dynamic since we can move it and just change the segmentation table
+    - validity bits/priveleges are tracked by the segments
+- a segment of code can be re-used so that two instances of something only need to load once
 
 ## Paging
+- fixed for first fit/next fit/etc.
+- a page table then tracks the order of the program that gets dropped into pages of memory
