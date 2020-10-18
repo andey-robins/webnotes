@@ -1,0 +1,16 @@
+
+
+Wed Oct  7 16:33:34 2020
+Command line: TestDisk
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Darwin, kernel 19.6.0 (Darwin Kernel Version 19.6.0: Thu Jun 18 20:49:00 PDT 2020; root:xnu-6153.141.1~1/RELEASE_X86_64) x86_64
+Compiler: GCC 4.2
+ext2fs lib: none, ntfs lib: none, reiserfs lib: none, ewf lib: none, curses lib: ncurses 5.7
+Hard disk list
+
+No disk found
+
+TestDisk exited normally.

@@ -2,7 +2,6 @@
 
 [Computer Security](./security/security.md)
 [Operating Systems](./os/os.md)
-[Military History](military.md)
 [Senior Design](srdesign.md)
 [Cyberforce](cyberforce.md)
 
