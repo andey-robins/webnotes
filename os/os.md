@@ -16,3 +16,4 @@ Table of Contents
 [Process Syncronization](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapter0607.md)
 [Deadlock](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapter08.md)
 [Memory Management](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapter09.md)
+[Virtual Memory](http://andey-robins.github.io/webnotes/mdwiki#!./os/chapter10.md)
