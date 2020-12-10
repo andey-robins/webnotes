@@ -1,5 +1,7 @@
 # Webnotes
 
+[Midwest Game Design](./midwestGd.md)
+
 [Fall 2020]()
   * [Computer Security](./fall_2020/security/security.md)
   * [Operating Systems](./fall_2020/os/os.md)
