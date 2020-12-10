@@ -1,9 +1,8 @@
 # Webnotes
 
-[Computer Security](./security/security.md)
-[Operating Systems](./os/os.md)
-[Senior Design](srdesign.md)
-[Cyberforce](cyberforce.md)
+[Fall 2020]()
+  * [Computer Security](./fall_2020/security/security.md)
+  * [Operating Systems](./fall_2020/os/os.md)
 
 [Spring 2020]()
 
