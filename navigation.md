@@ -2,6 +2,9 @@
 
 [Midwest Game Design](./midwestGd.md)
 
+[Side Channel Attacks](./sca/sidechannels.md)
+[Databases](./databases/databases.md)
+
 [Fall 2020]()
 
   * [Computer Security](./fall_2020/security/security.md)
