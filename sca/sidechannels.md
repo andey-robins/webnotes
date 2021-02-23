@@ -8,3 +8,4 @@ Code and assignments associated with this class are available [here](https://git
 Table of Contents
 -----
 [Introduction](http://andey-robins.github.io/webnotes/mdwiki#!./sca/introduction.md)
+[Power](http://andey-robins.github.io/webnotes/mdwiki#!./sca/power.md)

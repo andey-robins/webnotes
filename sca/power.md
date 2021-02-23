@@ -38,3 +38,9 @@ sigma -> is SD
 
 If the power traces fall within some normal distribution, we cna then begin to model the system. That's the convergence we want.
 - we would estimate the properties with x-bar and s^2 to be the estimates of mu and sigma respectively. 
+
+## Power Analysis
+Direct Interpretation of a small number of traces + complex statistical methods gives us a quite challenging system which requires detailed knowledge of implementation.
+
+### Template Attacks
+Template attacks leverage a "template" of waht the operations look like to get information about the data being used during an attack.
